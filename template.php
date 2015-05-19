@@ -177,8 +177,8 @@ function loop_preprocess_panels_pane(&$variables) {
   }
 
   // Add template for "notify friend" box
-  if ($variables['pane']->type == 'loop_notify_friend_pane') {
-    $variables['theme_hook_suggestions'][] = 'panels_pane__loop_notify_friend';
+  if ($variables['pane']->type == 'loop_friend_notification_pane') {
+    $variables['theme_hook_suggestions'][] = 'panels_pane__loop_friend_notification';
   }
 
   // Add template for flag subscribe button on post node.
