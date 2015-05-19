@@ -176,6 +176,11 @@ function loop_preprocess_panels_pane(&$variables) {
     $variables['theme_hook_suggestions'][] = 'panels_pane__editor';
   }
 
+  // Add template for "notify friend" box
+  if ($variables['pane']->type == 'loop_notify_friend_pane') {
+    $variables['theme_hook_suggestions'][] = 'panels_pane__loop_notify_friend';
+  }
+
   // Add template for flag subscribe button on post node.
   if ($variables['pane']->type == 'flag_link') {
     $variables['theme_hook_suggestions'][] = 'panels_pane__flag_subscribe';
