@@ -136,6 +136,11 @@ if (isset($primary_menu_block['content'])): ?>
     </div>
   </div>
 <?php endif; ?>
+
+<?php if ($breadcrumb): ?>
+  <div id="breadcrumb"><?php print $breadcrumb; ?></div>
+<?php endif; ?>
+
 <?php if (user_is_anonymous()): ?>
   <div class="layout-no-wrapper">
     <div class="layout--inner">
