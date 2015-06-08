@@ -18,8 +18,10 @@
 
 .taxonomy-subscription {
 	.view-content {
-		a {
-			color: $red;
+		.views-field {
+			a {
+				color: $red;
+			}
 		}
 	}
 }
