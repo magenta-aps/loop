@@ -1,0 +1,39 @@
+.node-subscription,
+.taxonomy-subscription {
+
+	margin-bottom: 0.5em;
+
+	.view-header {
+		font-size: 1.2em;
+	}
+
+	.user-profile--notification-actions {
+		margin-bottom: 0;
+	}
+
+	.user-profile-module--field {
+		line-height: 1.25em;
+		margin: 0;
+		padding: 0;
+	}
+}
+
+.taxonomy-subscription {
+	.view-content {
+		a {
+			@extend %tag;
+		}
+	}
+}
+
+.node-subscription {
+	.view-content {
+		a {
+			@extend %tag;
+			background-color: $green;
+		}
+		a:hover {
+			background-color: $green-darker;
+		}
+	}
+}
