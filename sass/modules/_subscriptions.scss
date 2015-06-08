@@ -1,23 +1,43 @@
 .node-subscription,
 .taxonomy-subscription {
 
-	margin-bottom: 0.5em;
+	margin-bottom: 1.5em;
 
 	.view-header {
-		font-size: 1.2em;
+		font-size: 1.5em;
 	}
 
 	.user-profile--notification-actions {
 		margin-bottom: 0;
 	}
 
-	.user-profile-module--field {
+	.view-content{
+		margin-top: 0.25em;
+	}
+
+	/*.user-profile-module--field {
 		line-height: 1.25em;
 		margin: 0;
 		padding: 0;
+	}*/
+}
+
+.taxonomy-subscription {
+	.view-content {
+		a {
+			color: $red;
+			line-height: 1.75em;
+			display: block;
+			border-bottom: 1px solid $gray-lighter;
+			margin-bottom: 1em;
+			padding-bottom: 1em;
+		}
 	}
 }
 
+
+
+/*
 .taxonomy-subscription {
 	.view-content {
 		a {
@@ -36,4 +56,4 @@
 			background-color: $green-darker;
 		}
 	}
-}
+}*/
