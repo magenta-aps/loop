@@ -176,7 +176,7 @@ function loop_preprocess_panels_pane(&$variables) {
     $variables['theme_hook_suggestions'][] = 'panels_pane__editor';
   }
 
-  // Add template for "notify friend" box
+  // Add template for "notify friend" box.
   if ($variables['pane']->type == 'loop_friend_notification_pane') {
     $variables['theme_hook_suggestions'][] = 'panels_pane__loop_friend_notification';
   }
