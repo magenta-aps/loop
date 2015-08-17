@@ -622,7 +622,19 @@ function loop_form_views_form_loop_user_taxonomy_subscriptions_panel_pane_1_alte
 
   // Copy button from field group.
   if (!empty($form['select'])) {
-    $form['rules_component::rules_remove_subscription'] = $form['select']['rules_component::loop_notification_remove_taxonomy_subscription'];
+    $buttonKey = 'rules_component::loop_notification_remove_taxonomy_subscription';
+    if (array_key_exists($buttonKey, $form['select'])) {
+      $form['rules_component::rules_remove_subscription'] = $form['select'][$buttonKey];
+    } else {
+      // Fall back to hardcoded definition because Drupal
+      $form['rules_component::rules_remove_subscription'] = array(
+          '#type' => 'submit',
+          '#value' => t('Remove subscription'),
+          '#validate' => array('views_bulk_operations_form_validate'),
+          '#submit' => array('views_bulk_operations_form_submit'),
+          '#operation_id' => 'rules_component::loop_notification_remove_taxonomy_subscription'
+      );
+    }
   }
 
   // Add wrappers.
