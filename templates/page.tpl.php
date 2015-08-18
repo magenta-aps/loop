@@ -129,6 +129,14 @@ if (isset($primary_menu_block['content'])): ?>
   </div>
 </header>
 
+<?php if (isset($loop_frontpage_welcometext)) { ?>
+  <div class="layout-frontpage">
+    <div class="layout--inner">
+      <?php print render($loop_frontpage_welcometext['content']); ?>
+    </div>
+  </div>
+<?php } ?>
+
 <?php if (isset($search)): ?>
   <div class="typeahead-block">
     <div class="typeahead-block--wrapper">

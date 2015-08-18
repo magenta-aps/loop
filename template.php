@@ -51,6 +51,10 @@ function loop_preprocess_page(&$variables) {
     hide($variables['tabs']['#secondary']);
   }
 
+  if ($arg[0] == 'front') {
+    $variables['loop_frontpage_welcometext'] = module_invoke('loop_frontpage', 'block_view', 'loop_frontpage_welcometext');
+  }
+
   // Load LOOP primary menu.
   if (module_exists('loop_navigation') && ($user->uid > 0)) {
     $variables['main_menu_block'] = module_invoke('system', 'block_view', 'main-menu');
