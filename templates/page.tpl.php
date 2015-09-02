@@ -129,13 +129,13 @@ if (isset($primary_menu_block['content'])): ?>
   </div>
 </header>
 
-<?php if (isset($loop_frontpage_welcometext)) { ?>
-  <div class="layout-frontpage">
-    <div class="layout--inner">
-      <?php print render($loop_frontpage_welcometext['content']); ?>
+<?php if ($page['pagetop']): ?>
+  <div class="section">
+    <div class="layout-frontpage">
+        <?php print render($page['pagetop']); ?>
     </div>
   </div>
-<?php } ?>
+<?php endif; ?>
 
 <?php if (isset($search)): ?>
   <div class="typeahead-block">

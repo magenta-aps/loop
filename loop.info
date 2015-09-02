@@ -6,6 +6,7 @@ core = 7.x
 ; Regions
 regions[header] = Header
 regions[navigation] = Navigation
+regions[pagetop] = Page Top
 regions[content] = Content
 regions[footer] = Footer
 
