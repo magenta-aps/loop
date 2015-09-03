@@ -1049,7 +1049,8 @@ label {
 .header {
   margin-bottom: 1.5em;
   z-index: 1;
-  background-color: #41ab51; }
+  background-color: #41ab51;
+  /* setting:header_color */ }
   .header:before, .header:after {
     content: "";
     display: table; }
