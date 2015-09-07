@@ -33,3 +33,8 @@ stylesheets[all][] = image.css
 plugins[panels][layouts] = templates/panels/layouts
 
 dependencies[] = style_settings
+
+; Defaults for the theme configuration
+settings[header_color] = #41ab51
+settings[header_logo_height] = 3em
+
