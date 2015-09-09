@@ -1050,7 +1050,8 @@ label {
 .header {
   margin-bottom: 1.5em;
   z-index: 1;
-  background-color: #41ab51; }
+  background-color: #41ab51;
+  /* setting:header_color */ }
   .header:before, .header:after {
     content: "";
     display: table; }
@@ -1079,7 +1080,8 @@ label {
 .logo--image {
   margin-right: auto;
   margin-left: auto;
-  max-height: 3em; }
+  max-height: 3em;
+  /* setting:header_logo_height */ }
 
 /* Layouts
    ================================================================================================================== */
