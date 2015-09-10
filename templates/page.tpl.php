@@ -129,7 +129,7 @@ if (isset($primary_menu_block['content'])): ?>
   </div>
 </header>
 
-<?php if ($page['pagetop']): ?>
+<?php if (isset($page['pagetop'])): ?>
   <div class="section">
     <div class="layout-frontpage">
         <?php print render($page['pagetop']); ?>
